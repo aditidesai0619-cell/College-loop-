@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F1E3B6"/>
+      <stop offset="1" stop-color="#D7B45A"/>
+    </linearGradient>
+    <radialGradient id="ball" cx="0.35" cy="0.3" r="0.75">
+      <stop offset="0" stop-color="#4E8270"/>
+      <stop offset="1" stop-color="#0E271F"/>
+    </radialGradient>
+    <linearGradient id="cone" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E8A58A"/>
+      <stop offset="1" stop-color="#9C5238"/>
+    </linearGradient>
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 0.3  0 0 0 0 0.2  0 0 0 0 0.1  0 0 0 0.07 0"/></filter>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <!-- plinth -->
+  <polygon points="380,720 1220,720 1300,800 300,800" fill="#F7EFD8"/>
+  <rect x="300" y="800" width="1000" height="70" fill="#E3CC8C"/>
+  <!-- sculptural forms -->
+  <circle cx="560" cy="590" r="130" fill="url(#ball)"/>
+  <g transform="translate(830 720)">
+    <polygon points="0,-330 120,0 -120,0" fill="url(#cone)"/>
+  </g>
+  <g transform="translate(1100 720)">
+    <polygon points="0,-180 90,-135 0,-90 -90,-135" fill="#EEF2EA"/>
+    <polygon points="-90,-135 0,-90 0,0 -90,-45" fill="#A8B9A0"/>
+    <polygon points="90,-135 0,-90 0,0 90,-45" fill="#6F8767"/>
+  </g>
+  <!-- orbit -->
+  <ellipse cx="800" cy="470" rx="560" ry="160" fill="none" stroke="#183D32" stroke-width="4" stroke-dasharray="4 16"/>
+  <circle cx="1350" cy="430" r="16" fill="#C8795B"/>
+  <text x="120" y="140" font-family="'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="700" letter-spacing="10" fill="#183D32">INNOVATION &amp; ENTREPRENEURSHIP</text>
+  <text x="120" y="220" font-family="Georgia, serif" font-size="70" font-style="italic" fill="#183D32">Build what's next.</text>
+  <rect width="1600" height="1000" filter="url(#grain)"/>
+</svg>

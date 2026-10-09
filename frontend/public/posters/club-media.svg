@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#292D29"/>
+      <stop offset="1" stop-color="#183D32"/>
+    </linearGradient>
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.07 0"/></filter>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <!-- editorial layout grid -->
+  <g fill="none" stroke="#A8B9A0" stroke-opacity="0.35" stroke-width="3">
+    <rect x="120" y="200" width="420" height="300"/><rect x="120" y="530" width="200" height="300"/><rect x="340" y="530" width="200" height="300"/>
+  </g>
+  <rect x="120" y="200" width="420" height="300" fill="#C8795B" fill-opacity="0.85"/>
+  <rect x="340" y="530" width="200" height="300" fill="#D7B45A" fill-opacity="0.85"/>
+  <g fill="#EEF2EA" fill-opacity="0.6"><rect x="140" y="560" width="160" height="12"/><rect x="140" y="590" width="130" height="12"/><rect x="140" y="620" width="150" height="12"/></g>
+  <!-- aperture / lens -->
+  <g transform="translate(1050 500)">
+    <circle r="300" fill="#EEF2EA"/>
+    <circle r="270" fill="#292D29"/>
+    <g fill="#183D32" stroke="#A8B9A0" stroke-width="3">
+      <path d="M0 -250 L150 -200 L40 -60Z"/>
+      <path d="M0 -250 L150 -200 L40 -60Z" transform="rotate(60)"/>
+      <path d="M0 -250 L150 -200 L40 -60Z" transform="rotate(120)"/>
+      <path d="M0 -250 L150 -200 L40 -60Z" transform="rotate(180)"/>
+      <path d="M0 -250 L150 -200 L40 -60Z" transform="rotate(240)"/>
+      <path d="M0 -250 L150 -200 L40 -60Z" transform="rotate(300)"/>
+    </g>
+    <circle r="62" fill="#D7B45A"/>
+    <circle r="270" fill="none" stroke="#C8795B" stroke-width="6" stroke-dasharray="2 14"/>
+  </g>
+  <text x="120" y="140" font-family="'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="12" fill="#D7B45A">MEDIA CLUB</text>
+  <rect width="1600" height="1000" filter="url(#grain)"/>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#183D32"/>
+      <stop offset="1" stop-color="#245345"/>
+    </linearGradient>
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.06 0"/></filter>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <!-- geometric bloom: quarter circles -->
+  <g transform="translate(1060 500)">
+    <path d="M0 0 V-260 A260 260 0 0 1 260 0Z" fill="#E8C9BE"/>
+    <path d="M0 0 H260 A260 260 0 0 1 0 260Z" fill="#C8795B"/>
+    <path d="M0 0 V260 A260 260 0 0 1 -260 0Z" fill="#D7B45A"/>
+    <path d="M0 0 H-260 A260 260 0 0 1 0 -260Z" fill="#A8B9A0"/>
+    <circle r="90" fill="#183D32"/>
+    <circle r="50" fill="#E8C9BE"/>
+  </g>
+  <!-- stars -->
+  <g fill="#D7B45A">
+    <path d="M1460 160 l14 34 36 3 -28 23 9 35 -31 -19 -31 19 9 -35 -28 -23 36 -3z"/>
+    <path d="M700 830 l10 24 26 2 -20 17 6 25 -22 -14 -22 14 6 -25 -20 -17 26 -2z"/>
+  </g>
+  <g font-family="Georgia, serif" fill="#EEF2EA">
+    <text x="120" y="420" font-size="120" font-weight="700">Her</text>
+    <text x="120" y="540" font-size="120" font-style="italic" fill="#E8C9BE">voice,</text>
+    <text x="120" y="660" font-size="120" font-weight="700">her way.</text>
+  </g>
+  <text x="120" y="160" font-family="'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="700" letter-spacing="12" fill="#D7B45A">WOMEN EMPOWERMENT CLUB</text>
+  <rect width="1600" height="1000" filter="url(#grain)"/>
+</svg>

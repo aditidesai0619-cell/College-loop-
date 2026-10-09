@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1E221E"/>
+      <stop offset="1" stop-color="#173A30"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFE9B0" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#FFE9B0" stop-opacity="0.04"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F6EEDC"/>
+      <stop offset="1" stop-color="#E3D2B3"/>
+    </linearGradient>
+    <radialGradient id="reel" cx="0.4" cy="0.35" r="0.7">
+      <stop offset="0" stop-color="#E9CB7F"/>
+      <stop offset="1" stop-color="#B08A35"/>
+    </radialGradient>
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.09 0"/></filter>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+
+  <!-- screen -->
+  <rect x="820" y="200" width="620" height="380" rx="8" fill="url(#screen)"/>
+  <g opacity="0.85">
+    <circle cx="1130" cy="390" r="120" fill="none" stroke="#C8795B" stroke-width="10"/>
+    <circle cx="1130" cy="390" r="70" fill="#C8795B" fill-opacity="0.25"/>
+    <path d="M1105 345 L1175 390 L1105 435Z" fill="#183D32"/>
+  </g>
+  <rect x="820" y="200" width="620" height="380" rx="8" fill="none" stroke="#0E1A15" stroke-width="10"/>
+
+  <!-- projector beam -->
+  <polygon points="300,420 820,205 820,575" fill="url(#beam)"/>
+  <!-- dust specks in beam -->
+  <g fill="#FFF3CF" opacity="0.7">
+    <circle cx="420" cy="420" r="3"/><circle cx="520" cy="380" r="2.5"/><circle cx="610" cy="460" r="3"/><circle cx="700" cy="330" r="2"/>
+    <circle cx="560" cy="430" r="2"/><circle cx="740" cy="500" r="2.5"/><circle cx="650" cy="390" r="2"/>
+  </g>
+
+  <!-- projector -->
+  <g transform="translate(150 380)">
+    <rect x="0" y="0" width="180" height="110" rx="16" fill="#3A4A43"/>
+    <rect x="0" y="0" width="180" height="26" rx="13" fill="#4C5E56"/>
+    <circle cx="190" cy="44" r="30" fill="#2A3530" stroke="#D7B45A" stroke-width="6"/>
+    <circle cx="190" cy="44" r="12" fill="#FFE9B0"/>
+    <rect x="40" y="110" width="20" height="90" fill="#2A3530"/><rect x="120" y="110" width="20" height="90" fill="#2A3530"/>
+    <!-- reels on top -->
+    <g transform="translate(40 -60)">
+      <circle r="58" fill="url(#reel)"/>
+      <g fill="#1E221E"><circle cx="0" cy="-30" r="13"/><circle cx="28" cy="10" r="13"/><circle cx="-28" cy="10" r="13"/></g>
+      <circle r="8" fill="#1E221E"/>
+    </g>
+    <g transform="translate(150 -50)">
+      <circle r="46" fill="url(#reel)"/>
+      <g fill="#1E221E"><circle cx="0" cy="-24" r="10"/><circle cx="22" cy="8" r="10"/><circle cx="-22" cy="8" r="10"/></g>
+      <circle r="7" fill="#1E221E"/>
+    </g>
+  </g>
+
+  <!-- film strip -->
+  <g transform="rotate(-6 800 820)">
+    <rect x="-40" y="740" width="1700" height="150" fill="#0F1411"/>
+    <g fill="#E8C9BE" fill-opacity="0.8">
+      <rect x="0" y="752" width="26" height="18" rx="4"/><rect x="70" y="752" width="26" height="18" rx="4"/><rect x="140" y="752" width="26" height="18" rx="4"/><rect x="210" y="752" width="26" height="18" rx="4"/><rect x="280" y="752" width="26" height="18" rx="4"/><rect x="350" y="752" width="26" height="18" rx="4"/><rect x="420" y="752" width="26" height="18" rx="4"/><rect x="490" y="752" width="26" height="18" rx="4"/><rect x="560" y="752" width="26" height="18" rx="4"/><rect x="630" y="752" width="26" height="18" rx="4"/><rect x="700" y="752" width="26" height="18" rx="4"/><rect x="770" y="752" width="26" height="18" rx="4"/><rect x="840" y="752" width="26" height="18" rx="4"/><rect x="910" y="752" width="26" height="18" rx="4"/><rect x="980" y="752" width="26" height="18" rx="4"/><rect x="1050" y="752" width="26" height="18" rx="4"/><rect x="1120" y="752" width="26" height="18" rx="4"/><rect x="1190" y="752" width="26" height="18" rx="4"/><rect x="1260" y="752" width="26" height="18" rx="4"/><rect x="1330" y="752" width="26" height="18" rx="4"/><rect x="1400" y="752" width="26" height="18" rx="4"/><rect x="1470" y="752" width="26" height="18" rx="4"/><rect x="1540" y="752" width="26" height="18" rx="4"/>
+      <rect x="0" y="860" width="26" height="18" rx="4"/><rect x="70" y="860" width="26" height="18" rx="4"/><rect x="140" y="860" width="26" height="18" rx="4"/><rect x="210" y="860" width="26" height="18" rx="4"/><rect x="280" y="860" width="26" height="18" rx="4"/><rect x="350" y="860" width="26" height="18" rx="4"/><rect x="420" y="860" width="26" height="18" rx="4"/><rect x="490" y="860" width="26" height="18" rx="4"/><rect x="560" y="860" width="26" height="18" rx="4"/><rect x="630" y="860" width="26" height="18" rx="4"/><rect x="700" y="860" width="26" height="18" rx="4"/><rect x="770" y="860" width="26" height="18" rx="4"/><rect x="840" y="860" width="26" height="18" rx="4"/><rect x="910" y="860" width="26" height="18" rx="4"/><rect x="980" y="860" width="26" height="18" rx="4"/><rect x="1050" y="860" width="26" height="18" rx="4"/><rect x="1120" y="860" width="26" height="18" rx="4"/><rect x="1190" y="860" width="26" height="18" rx="4"/><rect x="1260" y="860" width="26" height="18" rx="4"/><rect x="1330" y="860" width="26" height="18" rx="4"/><rect x="1400" y="860" width="26" height="18" rx="4"/><rect x="1470" y="860" width="26" height="18" rx="4"/><rect x="1540" y="860" width="26" height="18" rx="4"/>
+    </g>
+    <g>
+      <rect x="40" y="782" width="200" height="66" fill="#C8795B" fill-opacity="0.85"/>
+      <rect x="270" y="782" width="200" height="66" fill="#D7B45A" fill-opacity="0.85"/>
+      <rect x="500" y="782" width="200" height="66" fill="#A8B9A0" fill-opacity="0.85"/>
+      <rect x="730" y="782" width="200" height="66" fill="#E8C9BE" fill-opacity="0.85"/>
+      <rect x="960" y="782" width="200" height="66" fill="#C8795B" fill-opacity="0.85"/>
+      <rect x="1190" y="782" width="200" height="66" fill="#D7B45A" fill-opacity="0.85"/>
+      <rect x="1420" y="782" width="200" height="66" fill="#A8B9A0" fill-opacity="0.85"/>
+    </g>
+  </g>
+
+  <text x="120" y="150" font-family="'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="12" fill="#D7B45A">SHORT FILMS</text>
+  <text x="120" y="230" font-family="Georgia, serif" font-size="74" font-style="italic" fill="#EEF2EA">Lights down.</text>
+  <rect width="1600" height="1000" filter="url(#grain)"/>
+</svg>

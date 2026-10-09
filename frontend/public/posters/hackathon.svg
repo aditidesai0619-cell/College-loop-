@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0E2720"/>
+      <stop offset="1" stop-color="#1D4A3B"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.45" r="0.5">
+      <stop offset="0" stop-color="#D7B45A" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#D7B45A" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sphere" cx="0.35" cy="0.3" r="0.75">
+      <stop offset="0" stop-color="#F0B49B"/>
+      <stop offset="0.55" stop-color="#C8795B"/>
+      <stop offset="1" stop-color="#7E4330"/>
+    </radialGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F4F7F1"/>
+      <stop offset="0.5" stop-color="#C9D5C3"/>
+      <stop offset="1" stop-color="#8FA488"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0A1D17"/>
+      <stop offset="1" stop-color="#11302A"/>
+    </linearGradient>
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.07 0"/></filter>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <!-- circuit traces -->
+  <g fill="none" stroke="#A8B9A0" stroke-opacity="0.22" stroke-width="3">
+    <path d="M0 210 H260 L320 270 H470"/>
+    <path d="M0 780 H180 L240 720 H420"/>
+    <path d="M1600 180 H1360 L1300 240 H1160"/>
+    <path d="M1600 820 H1420 L1360 760 H1210"/>
+    <path d="M140 0 V120 L200 180"/>
+    <path d="M1460 1000 V900 L1400 840"/>
+    <path d="M760 0 V90 L800 130 H900"/>
+  </g>
+  <g fill="#A8B9A0" fill-opacity="0.45">
+    <circle cx="470" cy="270" r="9"/><circle cx="420" cy="720" r="9"/><circle cx="1160" cy="240" r="9"/>
+    <circle cx="1210" cy="760" r="9"/><circle cx="200" cy="180" r="9"/><circle cx="1400" cy="840" r="9"/><circle cx="900" cy="130" r="9"/>
+  </g>
+  <ellipse cx="800" cy="470" rx="560" ry="380" fill="url(#glow)"/>
+
+  <!-- floating isometric cube -->
+  <g transform="translate(300 300)">
+    <polygon points="0,-70 70,-35 0,0 -70,-35" fill="#F1D78E"/>
+    <polygon points="-70,-35 0,0 0,80 -70,45" fill="#D7B45A"/>
+    <polygon points="70,-35 0,0 0,80 70,45" fill="#A9862F"/>
+  </g>
+  <!-- sphere -->
+  <circle cx="1290" cy="330" r="92" fill="url(#sphere)"/>
+  <ellipse cx="1290" cy="470" rx="70" ry="10" fill="#000" opacity="0.18"/>
+  <!-- small pyramid -->
+  <g transform="translate(1250 690)">
+    <polygon points="0,-90 -70,40 0,70" fill="#C7D6BF"/>
+    <polygon points="0,-90 70,40 0,70" fill="#7F9877"/>
+  </g>
+
+  <!-- monitor (3D extruded) -->
+  <polygon points="1090,250 1118,272 1118,622 1090,600" fill="#0C221B"/>
+  <rect x="510" y="250" width="580" height="350" rx="20" fill="url(#metal)"/>
+  <rect x="534" y="274" width="532" height="302" rx="10" fill="url(#screen)"/>
+  <!-- terminal -->
+  <g font-family="'Courier New', monospace" font-weight="700">
+    <circle cx="562" cy="300" r="7" fill="#C8795B"/><circle cx="584" cy="300" r="7" fill="#D7B45A"/><circle cx="606" cy="300" r="7" fill="#A8B9A0"/>
+    <text x="562" y="352" font-size="26" fill="#D7B45A">&gt;_</text>
+    <rect x="610" y="334" width="210" height="16" rx="8" fill="#A8B9A0"/>
+    <rect x="836" y="334" width="96" height="16" rx="8" fill="#E8C9BE"/>
+    <rect x="590" y="372" width="130" height="16" rx="8" fill="#C8795B"/>
+    <rect x="736" y="372" width="250" height="16" rx="8" fill="#A8B9A0" fill-opacity="0.6"/>
+    <rect x="590" y="410" width="300" height="16" rx="8" fill="#D7B45A" fill-opacity="0.85"/>
+    <rect x="610" y="448" width="170" height="16" rx="8" fill="#E8C9BE" fill-opacity="0.8"/>
+    <rect x="796" y="448" width="120" height="16" rx="8" fill="#A8B9A0"/>
+    <rect x="590" y="486" width="220" height="16" rx="8" fill="#A8B9A0" fill-opacity="0.5"/>
+    <text x="562" y="548" font-size="26" fill="#D7B45A">&gt;</text>
+    <rect x="590" y="530" width="18" height="24" fill="#EEF2EA"/>
+  </g>
+  <!-- stand + keyboard -->
+  <polygon points="760,600 840,600 860,660 740,660" fill="#B5C6AE"/>
+  <polygon points="430,690 1170,690 1240,760 360,760" fill="#E3EADF"/>
+  <polygon points="360,760 1240,760 1240,778 360,778" fill="#9FB298"/>
+  <g fill="#C3D0BD">
+    <rect x="470" y="704" width="660" height="12" rx="6"/>
+    <rect x="450" y="724" width="700" height="12" rx="6"/>
+    <rect x="610" y="744" width="380" height="10" rx="5" fill="#D7B45A"/>
+  </g>
+
+  <!-- typography -->
+  <text x="120" y="150" font-family="'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="10" fill="#D7B45A">24-HOUR BUILD</text>
+  <text x="1480" y="910" text-anchor="end" font-family="Georgia, serif" font-size="210" font-style="italic" fill="none" stroke="#A8B9A0" stroke-opacity="0.45" stroke-width="3">&lt;/&gt;</text>
+  <rect width="1600" height="1000" filter="url(#grain)"/>
+</svg>

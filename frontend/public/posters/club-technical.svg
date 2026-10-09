@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#183D32"/>
+      <stop offset="1" stop-color="#0E2720"/>
+    </linearGradient>
+    <linearGradient id="chip" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E9D08C"/>
+      <stop offset="1" stop-color="#B08A35"/>
+    </linearGradient>
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.06 0"/></filter>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <!-- traces radiating from the chip -->
+  <g fill="none" stroke="#A8B9A0" stroke-opacity="0.5" stroke-width="5" stroke-linecap="round">
+    <path d="M700 400 V300 L620 220 H420"/><path d="M760 400 V260 L720 220 V120"/><path d="M840 400 V240 L900 180 H1100"/><path d="M900 400 V320 L960 260 H1240"/>
+    <path d="M700 600 V700 L620 780 H380"/><path d="M760 600 V760 L700 820 V900"/><path d="M840 600 V740 L900 800 H1180"/><path d="M900 600 V680 L980 760 H1300"/>
+    <path d="M650 450 H520 L460 390 H240"/><path d="M650 550 H480 L420 610 H200"/><path d="M950 450 H1100 L1160 390 H1380"/><path d="M950 550 H1120 L1180 610 H1420"/>
+  </g>
+  <g fill="#D7B45A">
+    <circle cx="420" cy="220" r="12"/><circle cx="720" cy="120" r="12"/><circle cx="1100" cy="180" r="12"/><circle cx="1240" cy="260" r="12"/>
+    <circle cx="380" cy="780" r="12"/><circle cx="700" cy="900" r="12"/><circle cx="1180" cy="800" r="12"/><circle cx="1300" cy="760" r="12"/>
+    <circle cx="240" cy="390" r="12"/><circle cx="200" cy="610" r="12"/><circle cx="1380" cy="390" r="12"/><circle cx="1420" cy="610" r="12"/>
+  </g>
+  <!-- chip -->
+  <rect x="650" y="400" width="300" height="200" rx="18" fill="#0B1E18" stroke="#A8B9A0" stroke-width="4"/>
+  <rect x="690" y="430" width="220" height="140" rx="10" fill="url(#chip)"/>
+  <text x="800" y="518" text-anchor="middle" font-family="'Courier New', monospace" font-size="54" font-weight="700" fill="#183D32">{ }</text>
+  <text x="120" y="140" font-family="'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="12" fill="#D7B45A">TECHNICAL CLUB</text>
+  <rect width="1600" height="1000" filter="url(#grain)"/>
+</svg>
